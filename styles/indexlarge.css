@@ -1,11 +1,5 @@
 @media (min-width:750px) {
-    #menu{
-        color: white;
-        text-decoration: none;
-        font-size: 2em;
-        display: flex;
-        justify-self: end;
-    }
+    
     :root{
         --background-color: rgb(22, 56, 91);
         --color: white;
@@ -20,12 +14,14 @@
     header{
         background-color: var(--background-color);
         color: var(--color);
+        grid-template-columns: 1fr;
     }
     header span{
         display: flex;
         justify-content: center;
         align-items:center;
         font-family: var(--title);
+        font-size: 1rem;
     }
     header span img{
         margin: 1em;
@@ -47,36 +43,40 @@
     header nav a:hover{
         background-color: gray;
     }
-    
+    .show{
+        display: flex;
+    }
     /*NAVIGATION*/
     
     #menu{
         display: none;
     }
     #menu::before{
-        content: "≡";
+        content: "x";
     }
     #menu.show::before{
-        content:"X";
+        content:"≡";
     }
     /*MAIN*/
     main{
-        margin: 0.5em 2em 2em;
+        margin: 2em
     }
     main h1{
         color: rgb(36, 102, 168);
+        margin-left: 1em;
     }
     .banners{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
     }
     .certificate{
         grid-column: 1/3;
     }
     main section{
-        margin-bottom: 1em;
-        margin-right: 1em;
+        width: 90%;
         border: 3px solid rgba(0, 0, 0, 0.821);
+        max-width: 700px;
     }
     main section ul{
         margin-top: 2em;
