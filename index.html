@@ -6,16 +6,20 @@
     <title>WDD231 | Manolo Vasquez Mendoza</title>
     <meta name="author" content="Manolo Vasquez Mendoza">
     <meta name="description" content="This page is for introducing myself to the world">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <script  src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
         <span>
-        <img src="" alt="Profile Photo">
+        <img src="images/manolovm.webp" alt="Profile Photo" width="110" height="150">
         <h1>Manolo A. Vasquez Mendoza</h1>
         </span>
-        <nav>
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="#">Chamber</a>
             <a href="#">Final</a>
@@ -25,8 +29,9 @@
     </header>
     <main>
         <h1>Home</h1>
+        <div class="banners">
         <section>
-        <div>
+        <div class="subtitle">
             <h2>Course Work</h2>
         </div>
         <ul>
@@ -36,37 +41,35 @@
         </ul>
         </section>
         <section>
-            <div>
-            <h2>Toloria, Madagascar</h2>
+            <div class="subtitle">
+            <h2>Lima, Peru</h2>
         </div>
         <figure>
-            <img>
-            <figcaption>Baobab Trees</figcaption>
+            <img src="images/lima.webp" alt="Lima, Peru">
+            <figcaption>Costa Verde</figcaption>
         </figure>
         </section>
-        <section>
-            <div>
+        <section class="certificate">
+            <div class="subtitle">
             <h2>Web and Computer Programming Certificate</h2>
         </div>
         <div class="buttons">
-            <button type="submit" value="ALL">All</button>
-            <button type="submit" value="CSE">CSE</button>
-            <button type="submit" value="WDD">WDD</button>
+            <button type="submit" value="ALL" id="all">All</button>
+            <button type="submit" value="CSE" id="cse">CSE</button>
+            <button type="submit" value="WDD" id="wdd">WDD</button>
         </div>
         <div class="courses">
-            <p>WDD130</p>
-            <p>WDD131</p>
-            <p>WDD231</p>
-            <p>CSE111</p>
-            <p>CSE210</p>
-            <p>CSEPC110</p>
+            <ul class="curso">
+
+        </ul>
 
         </div>
         </section>
+    </div>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> Manolo Vasquez Mendoza | Peru</p>
-        <p id="lastModified"></p>
+        <p>&copy;<span id="currentyear"></span> Manolo Vasquez Mendoza | Peru <img src="images/Flag-Peru.webp" alt="Peru flag" width="20"></p>
+        <p id="lastModified">GAAAAAA</p>
     </footer>
 </body>
 </html>
