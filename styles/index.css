@@ -13,7 +13,7 @@ header{
     background-color: var(--background-color);
     color: var(--color);
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 1fr .2fr;
     align-items: center;
 }
 header div{
@@ -55,9 +55,9 @@ header nav a:hover{
     text-decoration: none;
     font-size: 2em;
     display: block;
-    text-align: end;
-    width: 100%;
-    height: 100%;
+    text-align: center;
+    width:100%;
+    height:100%;
     align-content: center;
 }
 #menu::before{
@@ -88,7 +88,22 @@ section{
     max-width: 500px;
     margin: 0 auto;
 }
-
+@media (max-width:500px) {
+    header{
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr .2fr;        
+    }
+    header nav{
+        grid-column: span 2;
+    }
+    header h2{
+        font-size: 1.3rem;
+    }
+    section{
+        width:250px;
+    }
+}
 main section{
     margin-bottom: 1em;
     border: 3px solid rgba(0, 0, 0, 0.821);
