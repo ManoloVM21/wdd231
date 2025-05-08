@@ -16,14 +16,14 @@ header{
     grid-template-columns: 1fr 0.3fr;
     align-items: center;
 }
-header span{
+header div{
     display: flex;
     justify-content: center;
     align-items:center;
     font-family: var(--title);
     font-size: 1rem;
 }
-header span img{
+header div img{
     margin: 1em;
     width: 80px;
     height:auto;
