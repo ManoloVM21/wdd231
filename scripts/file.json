@@ -1,0 +1,12 @@
+{
+    "fam_name":"Vasquez",
+    "moving_date":"2004-06-24",
+    "fam_number":5,
+    "visited_bishop":true,
+    "family_members":[
+        {
+            "name":"Pedro Santos",
+            "gender":"Male"
+        }
+    ]
+}
