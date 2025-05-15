@@ -169,6 +169,7 @@ section img{
 footer{
     background-color: var(--background-color);
     display: grid;
+    margin-top: 1rem;
 }
 footer div{
     margin: 1em;
