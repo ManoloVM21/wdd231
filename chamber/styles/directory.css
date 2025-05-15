@@ -22,7 +22,7 @@ header{
     background-color: var(--background-color);
     justify-items: center;
 }
-header h1{
+header h2{
     align-self: end;
 }
 header span{
@@ -114,8 +114,7 @@ main{
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5px;
+    grid-template-columns: 1fr;
 }
 .grid section{
     max-width: 300px;
@@ -162,6 +161,9 @@ section a{
 }
 section img{
     margin: 0 auto;
+    width: 300px;
+  height: 250px;
+  object-fit: cover;
 }
 /*FOOTER*/
 footer{

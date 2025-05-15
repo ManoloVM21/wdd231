@@ -1,4 +1,4 @@
-@media (min-width:32rem){
+@media (min-width:35rem){
     header{
         grid-template-columns: 1fr 1fr 44px;
         grid-template-rows: 1fr;
@@ -50,8 +50,12 @@
         background-color: rgb(216, 216, 58);
         text-decoration: underline;
     }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center   ;
     }
 }
