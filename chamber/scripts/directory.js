@@ -42,7 +42,6 @@ const displayCompanies = (companies) =>{
         image.setAttribute('height', "250");
         image.setAttribute('loading',"lazy");
         website.setAttribute('href',`${company.website}`)
-        website.setAttribute('class','website');
         address.textContent = `${company.address}`;
         website.textContent = `Details`;
         card.appendChild(image);
