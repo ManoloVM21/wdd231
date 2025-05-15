@@ -1,0 +1,57 @@
+@media (min-width:32rem){
+    header{
+        grid-template-columns: 1fr 1fr 44px;
+        grid-template-rows: 1fr;
+    }
+    .mainbar{
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: 1.2rem;
+        padding-left:1rem ;
+    }
+    nav,nav.open{
+        grid-column: 2/3;
+        grid-row: 1;
+        background-color: rgb(216, 216, 58);
+        display: flex;
+        justify-content: space-around;
+        align-content: end;
+    }
+    .buttons{
+        justify-content: end;
+        grid-column: 3/4;
+        grid-row: 1;
+        grid-template-columns: 44px;
+    }
+    #hamburger,#hamburger.open{
+        display: none;
+    }
+    .menulinks,.menulinks.open{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    
+    #twocolor{
+        margin: 0.5rem;
+        justify-self: end;
+        grid-column: span 2;
+    }
+    
+    .menulinks a{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .menulinks a:hover{
+        background-color: rgb(216, 216, 58);
+        text-decoration: underline;
+    }
+    .currentpage{
+        background-color: rgb(216, 216, 58);
+        text-decoration: underline;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
