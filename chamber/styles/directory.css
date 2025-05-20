@@ -158,6 +158,7 @@ section{
 }
 section a{
     padding: .5rem 2rem;
+    color:black;
 }
 section img{
     margin: 0 auto;

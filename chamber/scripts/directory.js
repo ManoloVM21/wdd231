@@ -32,7 +32,7 @@ const displayCompanies = (companies) =>{
     companies.forEach((company) =>{
         let website = document.createElement('a');
         let card = document.createElement('section');
-        let name = document.createElement('h3');
+        let name = document.createElement('h2');
         let image = document.createElement('img');
         let address = document.createElement('p');
         name.textContent = `${company.name}`;
