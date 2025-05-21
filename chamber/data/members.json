@@ -5,7 +5,8 @@
     "phone": "+51 1 224 4444",
     "website": "https://www.crisol.com.pe",
     "image": "images/crisol.webp",
-    "membershipLevel": 1
+    "membershipLevel": 1,
+    "email": "contacto@crisol.com.pe"
   },
   {
     "name": "Restaurante Central",
@@ -13,7 +14,8 @@
     "phone": "+51 1 242 8515",
     "website": "https://www.centralrestaurante.com.pe",
     "image": "images/central.webp",
-    "membershipLevel": 3
+    "membershipLevel": 3,
+    "email": "reservas@centralrestaurante.com.pe"
   },
   {
     "name": "Gimnasio BodyTech",
@@ -21,7 +23,8 @@
     "phone": "+51 1 618 8888",
     "website": "https://www.bodytechperu.com",
     "image": "images/bodytech.webp",
-    "membershipLevel": 2
+    "membershipLevel": 2,
+    "email": "info@bodytechperu.com"
   },
   {
     "name": "Hotel Miraflores Park",
@@ -29,7 +32,8 @@
     "phone": "+51 1 610 4000",
     "website": "https://www.belmond.com/miraflores-park",
     "image": "images/hotel.webp",
-    "membershipLevel": 3
+    "membershipLevel": 3,
+    "email": "reservas@miraflorespark.com"
   },
   {
     "name": "Clínica Internacional",
@@ -37,7 +41,8 @@
     "phone": "+51 1 610 6000",
     "website": "https://www.clinicainternacional.com.pe",
     "image": "images/clinica.webp",
-    "membershipLevel": 3
+    "membershipLevel": 3,
+    "email": "atencion@clinicainternacional.com.pe"
   },
   {
     "name": "Café Verde",
@@ -45,14 +50,16 @@
     "phone": "+51 1 445 1234",
     "website": "https://www.cafeverde.pe",
     "image": "images/cafe.webp",
-    "membershipLevel": 2
+    "membershipLevel": 2,
+    "email": "hola@cafeverde.pe"
   },
   {
     "name": "Tecnología Perú",
     "address": "Av. Arequipa 2450, Lince, Lima",
     "phone": "+51 1 265 7070",
     "website": "https://www.tecnologiaperu.com",
-    "image":"images/tecnologi.webp",
-    "membershipLevel": 1
+    "image": "images/tecnologi.webp",
+    "membershipLevel": 1,
+    "email": "soporte@tecnologiaperu.com"
   }
 ]

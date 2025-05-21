@@ -10,6 +10,7 @@ header .mainbar{
     display: grid;
     grid-template-columns: 44px auto;
     grid-template-rows: 44px 20px;
+    padding-bottom: 1em;
 }
 header{
     display: grid;
@@ -22,7 +23,7 @@ header{
     background-color: var(--background-color);
     justify-items: center;
 }
-header h2{
+header h1{
     align-self: end;
 }
 header span{
@@ -65,7 +66,6 @@ nav{
 .currentpage{
     background-color: rgb(68, 68, 68);
 }
-
 #hamburger{
     font-size: 3rem;
     background: none;
@@ -93,80 +93,102 @@ nav ul{
 nav.open{
     grid-template-rows: 1fr;
 }
-
 /*MAIN*/
-.main-buttons{
-    display: flex;
-    justify-content: center;
+/*HERO*/
+main h1{
+    padding-left: 2em;
 }
-.main-buttons button{
-    margin: 1em;
-    width: 7em;
-    
-}
-main{
-    margin: 0 auto;
-    max-width: 700px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.grid section{
-    max-width: 300px;
-}
-.list {
-	display: flex;
-	flex-direction: column;
-}
-
-.list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-    text-wrap: wrap;
-	margin: 0;
-	padding: 0.25rem;
-    text-align: start;
-}
-
-.list section > * {
-	margin: 0 1rem;
-}
-
-.list section img {
-	display: none; /* smaller viewports only */
-}
-
-.list section h3 {
-	font-size: 1rem;
-}
-
-.list section:nth-child(even) {
-	background-color: #bbb;
-}
-
-section{
-    flex-direction: column;
-    border: 2px solid black;
+picture{
+    display: block;
+    width: 100%;
     text-align: center;
-    margin: 1em auto;
-    padding-bottom: .75em;
 }
-section a{
-    padding: .5rem 2rem;
-    color:black;
-}
-section img{
+picture img{
+    object-fit: cover;
+    width: 90%;
     margin: 0 auto;
-    width: 300px;
-  height: 250px;
-  object-fit: cover;
+    max-height: 500px;
+    height: auto;
+
+}
+/*CARDS*/
+.Cards{
+    display: flex;
+    flex-direction: column;
+}
+.forecast p{
+    grid-column: span 2;
+    padding: 1em;
+    font-size: 1.3rem;
+    text-align: center;   
+}
+.Cards div{
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+    border: 5px solid black;
+    align-items: center;
+    min-width: 300px;
+    max-width: 400px;
+}
+.Cards div h2{
+    grid-row: 1/2;
+    grid-column: span 2;
+    align-content: center;
+    background-color: rgb(139, 139, 139);
+    height: 40px;
+    padding-left: .5em;
+}
+#icon{
+    text-align: center;
+}
+#icon img{
+    grid-column: 1/2;
+    width: 50%;
+}
+/*BUSINESSES*/
+#businesses{
+    display: flex;
+    flex-direction: column;
+}
+#businesses .buscard{
+    margin: 1em auto;
+    background-color: rgb(197, 194, 194);
+    display: grid;
+    grid-template-columns: minmax(70px,170px) 1fr;
+    max-width: 450px;
+    min-width: 300px;
+    padding: .25em;
+    border-radius: 10px;
+}
+.buscard h3{
+    grid-column: span 2;
+    padding: .3em 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.buscard img{
+    grid-column: 1/2;
+    text-align: center;
+    width: 100%;
+}
+.buscard div{
+    grid-column: 2/3;
+    padding: 0 1em;
+}
+.buscard a{
+    color: #520000;
+    width: 100%;
+    text-wrap: wrap;
 }
 /*FOOTER*/
 footer{
     background-color: var(--background-color);
     display: grid;
     margin-top: 1rem;
+    text-align: center;
 }
 footer div{
     margin: 1em;

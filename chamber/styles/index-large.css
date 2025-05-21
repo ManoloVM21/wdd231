@@ -1,5 +1,6 @@
 @media (min-width:35rem){
     header{
+        display: grid;
         grid-template-columns: 1fr 1fr 44px;
         grid-template-rows: 1fr;
     }
@@ -9,7 +10,16 @@
         font-size: 1.2rem;
         padding-left:1rem ;
     }
-    nav,nav.open{
+    .buttons{
+        justify-content: end;
+        grid-column: 3/4;
+        grid-row: 1;
+        grid-template-columns: 44px;
+    }
+    #animateme{
+        grid-template-rows: unset;
+    }
+    #animateme,#animateme.open{
         grid-column: 2/3;
         grid-row: 1;
         background-color: rgb(216, 216, 58);
@@ -17,19 +27,14 @@
         justify-content: space-around;
         align-content: end;
     }
-    .buttons{
-        justify-content: end;
-        grid-column: 3/4;
-        grid-row: 1;
-        grid-template-columns: 44px;
-    }
+    
     #hamburger,#hamburger.open{
         display: none;
     }
     .menulinks,.menulinks.open{
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: space-around;
+        align-items: center;
     }
     
     #twocolor{
@@ -54,9 +59,26 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    /*CARDS*/
+    .Cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Cards div{
+        width: 30%;
+        max-width: 500px;
+    }
+    /*BUSINESSES*/
+    #businesses{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center   ;
+        justify-items: center;
+        text-align: start;
     }
 }
