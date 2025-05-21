@@ -144,6 +144,19 @@ picture img{
     height: 40px;
     padding-left: .5em;
 }
+.Cards .event p,
+.event h3,
+.event a{
+    padding-left: 1rem;
+}
+.event img{
+    justify-self: center;
+    width: 100%;
+}
+.event{
+    display: grid;
+    grid-template-columns: minmax(70px,170px) 1fr;
+}
 #icon{
     text-align: center;
 }
