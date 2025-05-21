@@ -23,7 +23,7 @@ header{
     background-color: var(--background-color);
     justify-items: center;
 }
-header h1{
+header h2{
     align-self: end;
 }
 header span{
