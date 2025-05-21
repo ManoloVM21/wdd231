@@ -95,6 +95,10 @@ nav.open{
 }
 /*MAIN*/
 /*HERO*/
+main >a{
+    text-decoration: none;
+    color: black;
+}
 main h1{
     padding-left: 2em;
 }
