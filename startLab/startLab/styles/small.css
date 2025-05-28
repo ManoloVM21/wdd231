@@ -1,0 +1,7 @@
+*{box-sizing: border-box;}
+
+#openButton {background-color: aqua;}
+
+::backdrop {
+    background-color: rgba(44, 88, 121, 0.384);
+}

@@ -143,7 +143,7 @@ figure img {
     padding: .5em;
     border-bottom: 1.5px solid black;
 }
-button{
+.buttons button{
     margin-right: 1rem;
     width: 10em;
     height: 2em;
@@ -153,10 +153,10 @@ button{
     border-radius: 6px;
     font-size: 1rem;
 }
-button:hover{
+.buttons button:hover{
     background-color: var(--highlighted-color);
 }
-button:active{
+.buttons button:active{
     background-color: var(--highlighted-color);
 }
 .courses ul{
@@ -172,7 +172,6 @@ button:active{
     border: 2px solid black;
     border-radius: 8px;
     text-align: center;
-
 }
 .courses p{
     margin-top: .5rem;
@@ -180,6 +179,46 @@ button:active{
 }
 .completed{
     background-color: rgb(240, 189, 96);
+}
+/*DIALOG*/
+#courseDetails{
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    margin: auto 0;
+    justify-self: center;
+}
+::backdrop{
+    background-color: rgb( 0 0 0 / 50%);
+}
+#courseDetails button{
+    position: absolute;
+    text-align:center;
+    right: 0;
+    padding: 10px;
+    height: 50px;
+    border: 1px solid rgb( 0 0 0 / 10%);
+    background-color: #b4b4b4;
+    max-width: 50px;
+    color: black;
+}
+#courseDetails h2{
+    background-color: rgb(19, 101, 148);
+    padding: 10px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+}
+#courseDetails h3{
+    font-size: 1.5rem;
+}
+#courseDetails p{
+    margin-top: .75em;
 }
 /*FOOTER*/
 footer{
