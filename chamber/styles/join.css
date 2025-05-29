@@ -186,7 +186,7 @@ form input[type="submit"]:hover{
   40% { transform: rotate(-1deg); }
   50% { transform: rotate(0deg); }
   60% { transform: rotate(-1deg); }
-  100% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes grow-up {
