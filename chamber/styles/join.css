@@ -166,7 +166,38 @@ form input[type="submit"]:hover{
     margin: 1rem auto;
     justify-items: center;
     border-radius: 30px;
+    animation-duration: 3s;
+    animation-name: pick_me;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+.cards:hover{
+    animation-duration: 1.2s;
+    animation-name: grow-up;
+    animation-iteration-count: 1;
+}
+
+@keyframes pick_me{
+    0% { transform: rotate(0deg); }
+  10% { transform: rotate(1deg); }
+  20% { transform: rotate(-1deg); }
+  30% { transform: rotate(1deg); }
+  40% { transform: rotate(-1deg); }
+  50% { transform: rotate(0deg); }
+  60% { transform: rotate(-1deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+@keyframes grow-up {
+    10%, 100%{
+        scale: 100%;
+    }
+    50%{
+        scale: 110%;
+    }
+}
+
 .nonprofit:hover{
     background: linear-gradient(to left,#047f8a, #68d7fc,#047f8a);
 }
@@ -181,6 +212,9 @@ form input[type="submit"]:hover{
 .gold:hover{
     background: linear-gradient(to left,#dfd701, #8f9600,#8f9600,#dfd701);
     color: rgb(255, 255, 255);
+}
+::backdrop{
+    background-color: #4e4f39a6;
 }
 .cards .open{
     margin: .5em;
