@@ -1,0 +1,73 @@
+@media (min-width:35rem){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 44px;
+        grid-template-rows: 1fr;
+    }
+    .mainbar{
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: 1.2rem;
+        padding-left:1rem ;
+    }
+    .buttons{
+        justify-content: end;
+        grid-column: 3/4;
+        grid-row: 1;
+        grid-template-columns: 44px;
+    }
+    #animateme{
+        grid-template-rows: unset;
+    }
+    #animateme,#animateme.open{
+        grid-column: 2/3;
+        grid-row: 1;
+        background-color: rgb(216, 216, 58);
+        display: flex;
+        justify-content: space-around;
+        align-content: end;
+    }
+    
+    #hamburger,#hamburger.open{
+        display: none;
+    }
+    .menulinks,.menulinks.open{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #twocolor{
+        margin: 0.5rem;
+        justify-self: end;
+        grid-column: span 2;
+    }
+    
+    .menulinks a{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .menulinks a:hover{
+        background-color: rgb(216, 216, 58);
+        text-decoration: underline;
+    }
+    .currentpage{
+        background-color: rgb(216, 216, 58);
+        text-decoration: underline;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*MEMBERSHIPS LAYOUT*/
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: start;
+    }
+}

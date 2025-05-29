@@ -1,24 +1,8 @@
-/*FOOTER*/
-const year = document.querySelector("#currentyear")
-const modified = document.querySelector("#lastModified");
-const today = new Date(document.lastModified);
+import { footer } from "./footer.js";
+import { navigation } from "./navigation.js";
 
-year.innerHTML = today.getFullYear();
-modified.innerHTML = `Last Update: <span id="currentyear">${new Intl.DateTimeFormat(
-    'en-US', {
-        dateStyle: 'medium',
-        timeStyle: "medium"
-    }).format(today)}</span>`;
-
-//HAMBUTTON
-const nav = document.querySelector("#animateme");
-const hambbutton = document.querySelector("#hamburger");
-
-hambbutton.addEventListener('click',()=>{
-    nav.classList.toggle('open');
-    hambbutton.classList.toggle('open');
-
-});
+navigation();
+footer();
 
 /*WEATHER TODAY*/
 const info = document.querySelector("#weather-info");

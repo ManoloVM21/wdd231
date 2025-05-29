@@ -1,0 +1,199 @@
+:root{
+    --background-color: rgb(216, 216, 58);
+}
+*{
+    margin: 0;
+}
+/*HEADER*/
+header .mainbar{
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 44px auto;
+    grid-template-rows: 44px 20px;
+    padding-bottom: 1em;
+}
+header{
+    display: grid;
+    grid-template-columns: auto 88px;
+}
+.buttons{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 44px 44px;
+    background-color: var(--background-color);
+    justify-items: center;
+}
+header h2{
+    align-self: end;
+}
+header span{
+    font-size: 0.8em;
+}
+header img,
+header button{
+    grid-row: span 2;
+    align-items:center;
+}
+
+#twocolor{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV*/
+nav{
+    background-color: black;
+}
+
+.menulinks a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: .75rem 2vw;
+}
+.menulinks a:hover{
+    background-color: rgb(68, 68, 68);
+}
+.menulinks{
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0;
+}
+.currentpage{
+    background-color: rgb(68, 68, 68);
+}
+#hamburger{
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#hamburger.open{
+    display: block;
+}
+#hamburger::before{
+    content: "≡";
+}
+#hamburger.open::before{
+    content: "X";
+}
+nav{
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav ul{
+    overflow: hidden;
+}
+nav.open{
+    grid-template-rows: 1fr;
+}
+/*HERO*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+main img{
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: center;
+    object-fit: cover;
+}
+main p{
+    max-width: 600px;
+    text-align: center;
+    font-size: 2rem;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--background-color);
+    display: grid;
+    margin-top: 1rem;
+    text-align: center;
+}
+footer div{
+    margin: 1em;
+}
+.linklogos{
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
+.linklogos img{
+    padding-left: 1em;
+}
+@media (min-width:35rem){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 44px;
+        grid-template-rows: 1fr;
+    }
+    .mainbar{
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: 1.2rem;
+        padding-left:1rem ;
+    }
+    .buttons{
+        justify-content: end;
+        grid-column: 3/4;
+        grid-row: 1;
+        grid-template-columns: 44px;
+    }
+    #animateme{
+        grid-template-rows: unset;
+    }
+    #animateme,#animateme.open{
+        grid-column: 2/3;
+        grid-row: 1;
+        background-color: rgb(216, 216, 58);
+        display: flex;
+        justify-content: space-around;
+        align-content: end;
+    }
+    
+    #hamburger,#hamburger.open{
+        display: none;
+    }
+    .menulinks,.menulinks.open{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #twocolor{
+        margin: 0.5rem;
+        justify-self: end;
+        grid-column: span 2;
+    }
+    
+    .menulinks a{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .menulinks a:hover{
+        background-color: rgb(216, 216, 58);
+        text-decoration: underline;
+    }
+    .currentpage{
+        background-color: rgb(216, 216, 58);
+        text-decoration: underline;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: start;
+    }
+}

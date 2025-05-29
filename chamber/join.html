@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Lima Chamber of Commerce</title>
+    <meta name="author" content="Manolo Vasquez Mendoza">
+    <meta name="description" content="This page is for anyone who wants to know more about the businesses in the area">
+    <meta property="og:title" content="Join to our Lima Businesses Comminity">
+    <meta property="og:description" content="Here you can give the necessary information of your business settled in Lima so everyone could reach it">
+    <meta property="og:image" content="https://cdn.www.gob.pe/uploads/document/file/6972846/1025507-noticia-883.jpg">
+    <meta property="og:url" content="https://manolovm21.github.io/wdd231/chamber/join.html">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="icon" href="images/limalogo.ico">
+    <script src="scripts/join.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="mainbar">
+            <img src="images/limalogo.webp" alt="Page Logo" width="44" height="60">
+            <h2>Lima</h2>
+            <span>Chamber of Commerce</span> 
+        </div>
+        <div class="buttons">
+            <button id="twocolor"><img src="images/darkmode.webp" alt="light/dark mode" width="34" height="40"></button>
+            <button id="hamburger"></button>
+        </div>
+        <nav id="animateme">
+            <ul class="menulinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="currentpage"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+        <h2>Membership Application Form</h2>
+        <form method="get" action="thankyou.html">
+            <label>First Name: <input type="text" name="first" autocomplete="given-name" required></label>
+
+            <label>Last Name: <input type="text" name="last" autocomplete="family-name" required></label>
+
+            <label>Organization Title: <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" required></label>
+
+            <label>Email: <input type="email" name="email" autocomplete="email" placeholder="yourname@organization.org"  required></label>
+
+            <label>Phone Number: <input type="tel" name="phone" autocomplete="tel" required></label>
+
+            <label>Business/Organization Name: <input type="text" name="businessName" autocomplete="organization" required></label>
+
+            <label>Select your level of membership:
+            <select id="membership" name="membership" required>
+                <option value="" selected>-</option>
+                <option value="Non Profit Membership">Non Profit Membership (No-Fee)</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select></label>
+            <label>Business Description: <textarea name="description"></textarea></label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Apply for Membership">
+        </form>
+        </section>
+        <section>
+            <h2>Membership Levels</h2>
+            <div class="cards nonprofit">
+                <h3>Non Profit Membership Level</h3>
+                <button id="openButton" class="open">Learn More</button>
+                <dialog id="nonP">
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="closeButton">X</button>
+                    <p>Price: $0/mo</p>
+                    <p>Designed for nonprofit organizations to stay connected with the community.</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>Inclusion in the member directory.</li>
+                        <li>Access to general community events.</li>
+                        <li>Networking opportunities with other nonprofits and local businesses.</li>
+                        <li>Monthly newsletter access.</li>
+                        <li>Listed in a special section for nonprofits on the websiteListed in a special section for nonprofits on the website.</li>
+                    </ul>
+                </dialog>
+            </div>
+             <div class="cards bronze">
+                <h3>Bronze Membership Level</h3>
+                <button id="openButton1" class="open">Learn More</button>
+                <dialog id="bronze">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="closeButton1">X</button>
+                    <p>Price: $5/mo</p>
+                    <p>Ideal for small businesses looking to increase visibility and make connections.</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>All NP Membership benefits.</li>
+                        <li>Enhanced profile in the member directory.</li>
+                        <li>1 promotional post per quarter on Chamber social media.</li>
+                        <li>Access to basic training and webinars.</li>
+                        <li>10% discount on paid events.</li>
+                        <li>“Chamber Member” badge for website or storefront display.</li>
+                    </ul>
+                </dialog>
+            </div>
+             <div class="cards silver">
+                <h3>Silver Membership Level</h3>
+                <button id="openButton2" class="open">Learn More</button>
+                <dialog id="silver">
+                    <h3>Silver Membership Level</h3>
+                    <button id="closeButton2">X</button>
+                    <p>Price: $10/mo</p>
+                    <p>Perfect for growing businesses seeking greater exposure and leadership opportunities.</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>All Bronze benefits.</li>
+                        <li>1 featured spotlight position per year on the homepage.</li>
+                        <li>Logo featured in monthly newsletters.</li>
+                        <li>2 promotional posts per quarter on Chamber social media.</li>
+                        <li>25% discount on paid events.</li>
+                        <li>Priority access to Silver+ exclusive events.</li>
+                        <li>Opportunity to lead workshops or speaking sessions.</li>
+                    </ul>
+                </dialog>
+            </div>
+             <div class="cards gold">
+                <h3>Gold Membership Level</h3>
+                <button id="openButton3" class="open">Learn More</button>
+                <dialog id="gold">
+                    <h3>Gold Membership Level</h3>
+                    <button id="closeButton3">X</button>
+                    <p>Price: $15/mo</p>
+                    <p>Designed for established businesses that want to lead, influence, and maximize their presence.</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>All Silver benefits.</li>
+                        <li>Monthly mentions in newsletters and social media.</li>
+                        <li>Permanent logo placement in the website footer.</li>
+                        <li>Exclusive landing page on the Chamber’s website.</li>
+                        <li>Priority seating and early access to major events.</li>
+                        <li>50% discount on all paid events.</li>
+                        <li>Premium advertising in newsletters and social media.</li>
+                        <li>Opportunity to be a primary sponsor for Chamber events.</li>
+                    </ul>
+                </dialog>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+        <h3>Lima Chamber of Commerce</h3>
+        <p>Jr Agustin Gamarra 9910</p>
+        <p>San Martin de Porres, Lima</p>
+        <p>info@limachamberofcommerce.org</p>
+        <p>+51 956384655</p></div>
+        <div class="linklogos">
+        <a href="https://x.com/"><img src="images/twitter.svg" alt="twitter" width="55" height="65"></a>
+        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook" width="55" height="65"></a>
+        <a href="https://wa.me/+15098276069"><img src="images/whatsapp.svg" alt="whatsapp" width="55" height="65"></a>
+        </div>
+        <div>
+        <p>WDD231 Class Project</p>
+        <p>Manolo Vasquez Mendoza</p>
+        <p>&copy;<span id="currentyear"></span> Lima Chamber of Commerce</p>
+        <p id="lastModified"></p></div>
+    </footer>
+</body>
+</html>

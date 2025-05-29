@@ -1,0 +1,240 @@
+:root{
+    --background-color: rgb(216, 216, 58);
+}
+*{
+    margin: 0;
+}
+/*HEADER*/
+header .mainbar{
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 44px auto;
+    grid-template-rows: 44px 20px;
+    padding-bottom: 1em;
+}
+header{
+    display: grid;
+    grid-template-columns: auto 88px;
+}
+.buttons{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 44px 44px;
+    background-color: var(--background-color);
+    justify-items: center;
+}
+header h2{
+    align-self: end;
+}
+header span{
+    font-size: 0.8em;
+}
+header img,
+header button{
+    grid-row: span 2;
+    align-items:center;
+}
+
+#twocolor{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV*/
+nav{
+    background-color: black;
+}
+
+.menulinks a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: .75rem 2vw;
+}
+.menulinks a:hover{
+    background-color: rgb(68, 68, 68);
+}
+.menulinks{
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0;
+}
+.currentpage{
+    background-color: rgb(68, 68, 68);
+}
+#hamburger{
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#hamburger.open{
+    display: block;
+}
+#hamburger::before{
+    content: "≡";
+}
+#hamburger.open::before{
+    content: "X";
+}
+nav{
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav ul{
+    overflow: hidden;
+}
+nav.open{
+    grid-template-rows: 1fr;
+}
+
+/*FORM*/
+section{
+    margin: 1rem auto;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+}
+section h2{
+    text-align: center;
+}
+form{
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin: .5rem 1em;
+    font-size: 1.2em;
+}
+form input,
+form select{
+    display: block;
+    width: 90%;
+    height: 2.5em;
+    border: 1px solid black;
+    border-left: 5px solid black;
+    border-radius: 5px;
+}
+form input:required{
+    border-left: 6px solid red;
+}
+form input:required:valid,
+form select:valid{
+    border-left: 6px solid green;
+}
+form textarea{
+    display: block;
+    width: 90%;
+    height: 4em;
+    border-left: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+form input[type="submit"]{
+    width: 60%;
+    height: 60px;
+    align-self: center;
+    margin: 1rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.25em;
+    text-wrap: wrap;
+}
+form input[type="submit"]:hover{
+    background-color: var(--background-color);
+    color: black;
+}
+/*MEMBERSHIP LEVELS*/
+.cards{
+    width: 60%;
+    max-width: 500px;
+    height: 70px;
+    border: 2px solid black;
+    padding: 2em;
+    margin: 1rem auto;
+    justify-items: center;
+    border-radius: 30px;
+}
+.nonprofit:hover{
+    background: linear-gradient(to left,#047f8a, #68d7fc,#047f8a);
+}
+.bronze:hover{
+    background: linear-gradient(to left,#be9500, #5e3d00,#5e3d00,#be9500);
+    color: aliceblue;
+}
+.silver:hover{
+    background: linear-gradient(to left,#3a3a3a, #a1a1a0,#a1a1a0,#3a3a3a);
+    color: rgb(21, 21, 21);
+}
+.gold:hover{
+    background: linear-gradient(to left,#dfd701, #8f9600,#8f9600,#dfd701);
+    color: rgb(255, 255, 255);
+}
+.cards .open{
+    margin: .5em;
+    padding: .5rem 1.5em;
+
+}
+/*Dialog*/
+dialog{
+    border: 1px solid black;
+    align-self: center;
+    margin: 0 auto;
+    justify-self: center;
+    max-width: 400px;
+}
+.nonprofit dialog h3{
+    background-color: #68d7fc;
+    padding: .5rem;
+    height: 25px;
+    margin-bottom: .5em;
+}
+.bronze dialog h3{
+    background-color: #be9500;
+    padding: .5rem;
+    height: 25px;
+    margin-bottom: .5em;
+}
+.silver dialog h3{
+    background-color: #a1a1a0;
+    padding: .5rem;
+    height: 25px;
+    margin-bottom: .5em;
+}
+.gold dialog h3{
+    background-color: #dfd701;
+    padding: .5rem;
+    height: 25px;
+    margin-bottom: .5em;
+}
+dialog button{
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    padding: .75rem;
+    height: 44px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: var(--background-color);
+    display: grid;
+    margin-top: 1rem;
+    text-align: center;
+}
+footer div{
+    margin: 1em;
+}
+.linklogos{
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
