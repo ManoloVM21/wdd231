@@ -24,3 +24,12 @@ closeButton2.addEventListener("click",()=>dialog3.close())
 
 openButton3.addEventListener("click",()=>dialog4.showModal());
 closeButton3.addEventListener("click",()=>dialog4.close())
+
+const timeStamp = document.querySelector("#timestamp");
+
+const timeMoment = new Date (document.lastModified);
+timeStamp.innerHTML =  `Time Stamp: <span id="currentyear">${new Intl.DateTimeFormat(
+    'en-US', {
+        dateStyle: 'medium',
+        timeStyle: "medium"
+    }).format(timeMoment)}</span>`;
