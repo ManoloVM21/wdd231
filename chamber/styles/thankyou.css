@@ -109,6 +109,7 @@ main p{
     max-width: 600px;
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 1em;
 }
 /*FOOTER*/
 footer{
