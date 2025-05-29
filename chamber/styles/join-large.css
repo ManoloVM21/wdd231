@@ -64,6 +64,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    main h1{
+        grid-column: span 2;
+    }
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

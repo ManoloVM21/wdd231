@@ -94,6 +94,10 @@ nav.open{
     grid-template-rows: 1fr;
 }
 
+main h1{
+    padding-left: 3em;
+    font-size: 3em;
+}
 /*FORM*/
 section{
     margin: 1rem auto;
