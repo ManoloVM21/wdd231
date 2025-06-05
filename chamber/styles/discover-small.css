@@ -1,0 +1,165 @@
+:root{
+    --background-color: rgb(216, 216, 58);
+}
+*{
+    margin: 0;
+}
+/*HEADER*/
+header .mainbar{
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 44px auto;
+    grid-template-rows: 44px 20px;
+}
+header{
+    display: grid;
+    grid-template-columns: auto 88px;
+}
+.buttons{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 44px 44px;
+    background-color: var(--background-color);
+    justify-items: center;
+}
+header h2{
+    align-self: end;
+}
+header span{
+    font-size: 0.8em;
+}
+header img,
+header button{
+    grid-row: span 2;
+    align-items:center;
+}
+
+#twocolor{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/*NAV*/
+nav{
+    background-color: black;
+}
+
+.menulinks a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: .75rem 2vw;
+}
+.menulinks a:hover{
+    background-color: rgb(68, 68, 68);
+}
+.menulinks{
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0;
+}
+.currentpage{
+    background-color: rgb(68, 68, 68);
+}
+
+#hamburger{
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#hamburger.open{
+    display: block;
+}
+#hamburger::before{
+    content: "≡";
+}
+#hamburger.open::before{
+    content: "X";
+}
+nav{
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav ul{
+    overflow: hidden;
+}
+nav.open{
+    grid-template-rows: 1fr;
+}
+/*DIALOG*/
+dialog{
+    align-self: center;
+    margin: 0 auto;
+    min-height: 80px;
+    align-content: center;
+}
+dialog button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-self: end;
+    padding: 1rem;
+    background: transparent;
+    border: 0;
+    cursor:pointer;
+}
+dialog::backdrop{
+    background: #00000079;
+}
+/*main*/
+body h1{
+    margin-left: 2rem;
+}
+#cards{
+    margin: 0 auto;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+    background-color: rgb(194, 188, 188);
+    padding: .5rem;
+    max-width: 350px;
+}
+
+section img{
+    width: 100%;
+}
+section p,
+section address{
+    margin: .25em 0;
+}
+section button{
+    padding: 1rem;
+    background: var(--background-color);
+    font-weight: bold;
+    border-radius: 8px;
+}
+section button:hover{
+    background: yellow;
+}
+
+/*FOOTER*/
+footer{
+    background-color: var(--background-color);
+    display: grid;
+    margin-top: 1rem;
+}
+footer div{
+    margin: 1em;
+}
+.linklogos{
+    margin: 0;
+    text-align: center;
+    align-self: center;
+}
+.linklogos img{
+    padding-left: 1em;
+}

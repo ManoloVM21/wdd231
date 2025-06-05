@@ -1,5 +1,5 @@
 export function footer(){
-    const year = document.querySelector("#currentyear")
+const year = document.querySelector("#currentyear")
 const modified = document.querySelector("#lastModified");
 const today = new Date(document.lastModified);
 

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Parque Kennedy",
+    "address": "Av. Diagonal, Miraflores, Lima",
+    "description": "A lively park in the heart of Miraflores known for street artists, local food, and friendly cats.",
+    "image": "images/parque-kennedy.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Parque_Kennedy"
+  },
+  {
+    "name": "Plaza Mayor de Lima",
+    "address": "Jr. de la Unión, Cercado de Lima",
+    "description": "Historic city center surrounded by the Government Palace, Cathedral, and colonial architecture.",
+    "image": "images/plaza-mayor.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Plaza_Mayor_de_Lima"
+  },
+  {
+    "name": "Malecón de Miraflores",
+    "address": "Malecón Cisneros, Miraflores",
+    "description": "Cliffside parks with ocean views, ideal for walking, cycling, and paragliding.",
+    "image": "images/malecon.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Miraflores_(Lima)"
+  },
+  {
+    "name": "Huaca Pucllana",
+    "address": "Calle General Borgoño cuadra 8, Miraflores",
+    "description": "A pre-Inca pyramid made of adobe in the middle of the modern city.",
+    "image": "images/huaca-pucllana.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Huaca_Pucllana"
+  },
+  {
+    "name": "Circuito Mágico del Agua",
+    "address": "Parque de la Reserva, Cercado de Lima",
+    "description": "Fountain park offering light and water shows at night, popular with families.",
+    "image": "images/circuito_magico.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Parque_de_la_Reserva"
+  },
+  {
+    "name": "Museo Larco",
+    "address": "Av. Bolívar 1515, Pueblo Libre",
+    "description": "Famous for its collection of pre-Columbian art and ceramics in a colonial mansion.",
+    "image": "images/museo_larco.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Museo_Larco"
+  },
+  {
+    "name": "Barranco",
+    "address": "Barranco District, Lima",
+    "description": "A bohemian neighborhood known for its colorful murals, cafes, and the Bridge of Sighs.",
+    "image": "images/barranco.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Distrito_de_Barranco"
+  },
+  {
+    "name": "Costa Verde",
+    "address": "Costa Verde Highway, Lima",
+    "description": "Scenic coastal highway and beach area ideal for surfing and sunsets.",
+    "image": "images/costa-verde.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Costa_Verde_(Lima)"
+  }
+]

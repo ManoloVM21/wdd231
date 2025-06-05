@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lima Discover | WDD231 Manolo Vasquez Mendoza</title>
+    <meta name="author" content="Manolo Vasquez Mendoza">
+    <meta name="description" content="This page is for anyone who wants to know more about the businesses in the area">
+    <meta property="og:title" content="Lima Businesses Directory">
+    <meta property="og:description" content="Here you can find the necessary information of businesses settled in Lima">
+    <meta property="og:image" content="https://static.mercadonegro.pe/wp-content/uploads/2024/05/23121125/datos-emprendedores-limenos-3.png">
+    <meta property="og:url" content="https://manolovm21.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+    <link rel="icon" href="images/limalogo.ico">
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="mainbar">
+            <img src="images/limalogo.webp" alt="Page Logo" width="44" height="60">
+            <h2>Lima</h2>
+            <span>Chamber of Commerce</span> 
+        </div>
+        <div class="buttons">
+            <button id="twocolor"><img src="images/darkmode.webp" alt="light/dark mode" width="34" height="40"></button>
+            <button id="hamburger"></button>
+        </div>
+        <nav id="animateme">
+            <ul class="menulinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="currentpage"><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Lima Directory</h1>
+        <dialog id="dialog">
+            <p id="message"></p>
+            <button id="closeButton">X</button>
+        </dialog>
+        
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div>
+        <h3>Lima Chamber of Commerce</h3>
+        <p>Jr Agustin Gamarra 9910</p>
+        <p>San Martin de Porres, Lima</p>
+        <p>info@limachamberofcommerce.org</p>
+        <p>+51 956384655</p></div>
+        <div class="linklogos">
+        <a href="https://x.com/"><img src="images/twitter.svg" alt="twitter" width="55" height="65"></a>
+        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook" width="55" height="65"></a>
+        <a href="https://wa.me/+15098276069"><img src="images/whatsapp.svg" alt="whatsapp" width="55" height="65"></a>
+        </div>
+        <div>
+        <p>WDD231 Class Project</p>
+        <p>Manolo Vasquez Mendoza</p>
+        <p>&copy;<span id="currentyear"></span> Lima Chamber of Commerce</p>
+        <p id="lastModified"></p></div>
+    </footer>
+</body>
+</html>
