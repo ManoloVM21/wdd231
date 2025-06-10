@@ -1,0 +1,42 @@
+@media (min-width:600px) {
+    nav{
+        width: 52vw;
+    }
+    section h2{
+        font-size: 5em;
+    }
+    .cards h3, .cards p{
+        font-size: 2.5em;
+    }
+    .cards img{
+        max-height: 30rem;
+        margin-left: 0;
+    }
+    .media img{
+        width: 80px;
+    }
+    .cards button{
+    width: 8rem;
+    justify-self: center;
+    font-weight: bold;
+    border-radius: 30px;
+    align-self: center;
+    padding: 1em;
+    cursor: pointer;
+    transition: margin-left 0.6s ease, backgroun 0.6s ease, color 0.6s ease;
+    margin-left: 0;
+}
+    .cards:hover{
+    background-color: #a79af3;
+    }
+    .cards:hover button{
+        margin-left: 1.5rem;
+        background: black;
+        color: #fff;
+        }
+}
+@media (min-width:800px) {
+    nav{
+        width: 40vw;
+    }
+}

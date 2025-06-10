@@ -1,0 +1,164 @@
+[
+   {
+    "name":"Taylor Swift Cake",
+    "precio":90,
+    "imagen":"images/torta_1-nofondo.webp",
+    "link":""
+   },
+   {
+    "name":"Aniversario de negocio",
+    "precio":70,
+    "imagen":"images/mmash.jpg",
+    "link":""
+   },
+   {
+    "name":"Dia de la Madre",
+    "precio":50,
+    "imagen":"images/dia-mama.jpg",
+    "link":""
+   },
+   {
+    "name":"Dia de San Valentín",
+    "precio":50,
+    "imagen":"images/sanvalentin.jpg",
+    "link":""
+   },
+   {
+    "name":"Diva",
+    "precio":80,
+    "imagen":"images/diva.jpg",
+    "link":""
+   },
+   {
+    "name":"Geometry Dash",
+    "precio":70,
+    "imagen":"images/geometryDash.jpg",
+    "link":""
+   },
+   {
+    "name":"Cumpleaños 1",
+    "precio":70,
+    "imagen":"images/cumpleaños1.jpg",
+    "link":""
+   },
+   {
+    "name":"Cumpleaños 2",
+    "precio":70,
+    "imagen":"images/cumpleaños2.jpg",
+    "link":""
+   },
+   {
+    "name":"Cumpleaños 3",
+    "precio":70,
+    "imagen":"images/cumpleaños3.jpg",
+    "link":""
+   },
+   {
+    "name":"Cumpleaños 4",
+    "precio":70,
+    "imagen":"images/cumpleaños4.jpg",
+    "link":""
+   },
+   {
+    "name":"Cars",
+    "precio":70,
+    "imagen":"images/cars.jpg",
+    "link":""
+   },
+   {
+    "name":"Minnie Mouse",
+    "precio":70,
+    "imagen":"images/minie-mouse.jpg",
+    "link":""
+   },
+   {
+    "name":"Floreado",
+    "precio":70,
+    "imagen":"images/floreado.jpg",
+    "link":""
+   },
+   {
+    "name":"Durazno",
+    "precio":70,
+    "imagen":"images/durazno.jpg",
+    "link":""
+   },
+   {
+    "name":"Rosa",
+    "precio":70,
+    "imagen":"images/rosa.jpg",
+    "link":""
+   },
+   {
+    "name":"Propuesta de Matrimonio",
+    "precio":70,
+    "imagen":"images/propuesta.jpg",
+    "link":""
+   },
+   {
+    "name":"Toy Story",
+    "precio":70,
+    "imagen":"images/toyStory.jpg",
+    "link":""
+   },
+   {
+    "name":"Gallina Pintadita",
+    "precio":70,
+    "imagen":"images/gallina.jpg",
+    "link":""
+   },
+   {
+    "name":"Liso Blanco",
+    "precio":70,
+    "imagen":"images/liso-blanco.jpg",
+    "link":""
+   },
+   {
+    "name":"Cartera",
+    "precio":70,
+    "imagen":"images/cartera.jpg",
+    "link":""
+   },
+   {
+    "name":"Graduación",
+    "precio":70,
+    "imagen":"images/graduacion.jpg",
+    "link":""
+   },
+   {
+    "name":"Roblox",
+    "precio":70,
+    "imagen":"images/roblox.jpg",
+    "link":""
+   },
+   {
+    "name":"Futbol PSG",
+    "precio":70,
+    "imagen":"images/psg.jpg",
+    "link":""
+   },
+   {
+    "name":"Messi",
+    "precio":70,
+    "imagen":"images/messi.jpg",
+    "link":""
+   },
+   {
+    "name":"Spiderman",
+    "precio":70,
+    "imagen":"images/spiderman.jpg",
+    "link":""
+   },
+   {
+    "name":"Minnie Mouse 2",
+    "precio":70,
+    "imagen":"images/minnie2.jpg",
+    "link":""
+   },
+   {
+    "name":"Keke de Naranja",
+    "precio":50,
+    "imagen":"images/keke-naranja.jpg",
+    "link":""
+   }
+]

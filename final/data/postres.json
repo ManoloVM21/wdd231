@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Crumble de Limon",
+        "precio":20,
+        "imagen":"images/crumble-limon.jpg",
+        "link":""
+    },
+    {
+        "name":"Crumble de Manzana",
+        "precio":20,
+        "imagen":"images/crumble-manzana.jpg",
+        "link":""
+    },
+    {
+        "name":"Pie de Limon",
+        "precio":20,
+        "imagen":"images/pie-limon.jpg",
+        "link":""
+    },
+    {
+        "name":"Galletas de Avena Chocochip",
+        "precio":20,
+        "imagen":"images/avena-chocochip.jpg",
+        "link":""
+    }
+]
