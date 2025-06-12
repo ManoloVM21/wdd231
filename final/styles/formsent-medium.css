@@ -1,0 +1,10 @@
+@media (min-width:500px) {
+    nav{
+        width: 52vw;
+    }
+}
+@media (min-width:800px) {
+    nav{
+        width: 40vw;
+    }
+}

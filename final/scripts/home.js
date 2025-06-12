@@ -1,21 +1,18 @@
-const hamButton = document.querySelector("#hambutton");
-const navigation = document.querySelector("#banner");
-const closeButton = document.querySelector("#closeBanner")
-
-hamButton.addEventListener("click", ()=>{
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-closeButton.addEventListener("click", ()=>{
-    navigation.classList.toggle('open');
-})
-
+import { nav } from "./nav.mjs";
+import { footer } from "./footer.mjs";
+nav();
+footer();
 /*CARDS*/
 async function Cards() {
-    const response = await fetch("data/pasteles.json");
-    const data = await response.json();
-    const shuffled = data.sort(() => 0.5 - Math.random()).slice(0, 2);
-    displayCards(shuffled);
+    try{
+        const response = await fetch("data/pasteles.json");
+        const data = await response.json();
+        const shuffled = data.sort(() => 0.5 - Math.random()).slice(0, 2);
+        displayCards(shuffled);
+    } catch(error){
+        console.log(error);
+    }
+    
 }
 Cards()
 const secpasteles = document.querySelector("#pasteles");
@@ -32,7 +29,7 @@ function displayCards(data){
         h3.innerHTML = `${item.name}`;
         p.innerHTML = `<strong>Precio:</strong> s/.${item.precio}`;
         button.innerHTML = "Ver Detalles";
-        button.addEventListener("click", ()=>{window.open(`${item.link}`,"_blank")});
+        button.addEventListener("click", ()=>{window.open(`productos.html`,"_self")});
         div.setAttribute("class",`cards ${item.name}`);
         div.appendChild(img);
         div.appendChild(h3);
@@ -43,7 +40,7 @@ function displayCards(data){
     const verMas = document.createElement("button");
     verMas.innerHTML = "Ver Más";
     verMas.setAttribute("class","verMas");
-    verMas.addEventListener("click", ()=>{window.open("pasteles.html","_blank")})
+    verMas.addEventListener("click", ()=>{window.open("productos.html","_self")})
     secpasteles.appendChild(verMas);
 }
 
@@ -68,7 +65,7 @@ function displayCards2(data){
         h3.innerHTML = `${item.name}`;
         p.innerHTML = `<strong>Precio:</strong> s/.${item.precio}`;
         button.innerHTML = "Ver Detalles";
-        button.addEventListener("click", ()=>{window.open(`${item.link}`,"_blank")});
+        button.addEventListener("click", ()=>{window.open(`productos.html`,"_self")});
         div.setAttribute("class",`cards ${item.name}`);
         div.appendChild(img);
         div.appendChild(h3);
@@ -79,7 +76,7 @@ function displayCards2(data){
     const verMas = document.createElement("button");
     verMas.innerHTML = "Ver Más";
     verMas.setAttribute("class","verMas");
-    verMas.addEventListener("click", ()=>{window.open("pasteles.html","_blank")})
+    verMas.addEventListener("click", ()=>{window.open("productos.html","_self")})
     secPostres.appendChild(verMas);
 }
 window.addEventListener("scroll", () => {
