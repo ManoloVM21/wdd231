@@ -100,7 +100,7 @@ nav ul li:hover {
 color:#fff;
 }
 .currentpage{
-    color: #fff;
+    text-decoration: underline;
 }
 nav button{
     display: block;
