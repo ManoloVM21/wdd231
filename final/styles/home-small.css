@@ -52,7 +52,9 @@ header h2{
   position: relative;
   z-index: 1;
 }
-
+#welcome{
+    display: none;
+}
 
 /*NAV*/
 nav.open{
@@ -166,23 +168,27 @@ section{
     grid-template-columns: 55% 45%;
     grid-template-rows: 40% 30% 30%;
     min-width: 80%;
+    max-width: 300px;
     max-height: 17em;
     border-radius: 20px;
     z-index: 1;
 }
 
 .cards img{
-    width: 100%;
-    max-height: 30rem;
+    max-height:100%;
+    height: fit-content;
+    width: fit-content;
+    max-width: 100%;
     grid-column: 1/2;
     grid-row: 1/4;
     justify-self: center;
+    align-self: center;
 }
 .cards h3,
 .cards p{
     display: block;
     justify-self: start;
-    font-size: 7vw;
+    font-size: 1.5rem;
 }
 .cards h3{
     font-family: 'Fugaz One';

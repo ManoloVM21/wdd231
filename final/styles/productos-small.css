@@ -52,8 +52,9 @@ header h2{
   position: relative;
   z-index: 1;
 }
-
-
+#welcome{
+    display: none;
+}
 /*NAV*/
 nav.open{
     transform: translateX(-100%);

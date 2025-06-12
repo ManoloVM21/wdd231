@@ -2,6 +2,17 @@
     nav{
         width: 52vw;
     }
+    #welcome{
+        display: inline;
+        width: fit-content;
+        font-size: 1rem;
+        font-family: var(--menu);
+        color: white;
+        background-color: black;
+        padding: .75rem;
+        border-radius: 30px;
+        align-self: center;
+    }
     section{
         display: flex;
         flex-wrap: wrap;

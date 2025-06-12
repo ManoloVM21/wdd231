@@ -9,7 +9,12 @@ header h2{
     justify-self: center;
     font-size: 4vw;
 }
-
+#welcome{
+    font-size: 1.75rem;
+}
+#hambutton{
+    width: fit-content;
+}
 /*NAV*/
 nav{
     width: 30vw;
@@ -36,4 +41,5 @@ nav button{
 #hambutton::after{
     content: " Menu";
 }
+
 }

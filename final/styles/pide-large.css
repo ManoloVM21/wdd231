@@ -1,13 +1,4 @@
-@media (min-width:600px) {
-    nav{
-        width: 52vw;
-    }
-}
-@media (min-width:800px) {
-    nav{
-        width: 40vw;
-    }
-}
+
 
 @media (min-width:1000px) {
 
@@ -20,7 +11,12 @@ header h2{
     justify-self: center;
     font-size: 4vw;
 }
-
+#welcome{
+    font-size: 1.75rem;
+}
+#hambutton{
+    width: fit-content;
+}
 /*NAV*/
 nav{
     width: 30vw;
@@ -46,6 +42,10 @@ nav button{
 
 #hambutton::after{
     content: " Menu";
+}
+form{
+    max-width: 600px;
+    font-size: 1.5rem;
 }
 /*SECTION*/
 }

@@ -2,6 +2,7 @@ import { nav } from "./nav.mjs";
 import { footer } from "./footer.mjs";
 nav();
 footer();
+
 /*CARDS*/
 async function Cards() {
     try{
@@ -31,6 +32,12 @@ function displayCards(data){
         button.innerHTML = "Ver Detalles";
         button.addEventListener("click", ()=>{window.open(`productos.html`,"_self")});
         div.setAttribute("class",`cards ${item.name}`);
+        div.addEventListener("mouseenter", () => {
+        div.style.backgroundColor = `${item.color}`;
+        });
+        div.addEventListener("mouseleave", () => {
+        div.style.backgroundColor = "#ffffff";
+        });
         div.appendChild(img);
         div.appendChild(h3);
         div.appendChild(p);
@@ -40,7 +47,7 @@ function displayCards(data){
     const verMas = document.createElement("button");
     verMas.innerHTML = "Ver Más";
     verMas.setAttribute("class","verMas");
-    verMas.addEventListener("click", ()=>{window.open("productos.html","_self")})
+    verMas.addEventListener("click", ()=>{window.open("productos#pasteles.html","_self")})
     secpasteles.appendChild(verMas);
 }
 
@@ -67,6 +74,12 @@ function displayCards2(data){
         button.innerHTML = "Ver Detalles";
         button.addEventListener("click", ()=>{window.open(`productos.html`,"_self")});
         div.setAttribute("class",`cards ${item.name}`);
+        div.addEventListener("mouseenter", () => {
+        div.style.backgroundColor = `${item.color}`;
+        });
+        div.addEventListener("mouseleave", () => {
+        div.style.backgroundColor = "#ffffff";
+        });
         div.appendChild(img);
         div.appendChild(h3);
         div.appendChild(p);
@@ -76,7 +89,7 @@ function displayCards2(data){
     const verMas = document.createElement("button");
     verMas.innerHTML = "Ver Más";
     verMas.setAttribute("class","verMas");
-    verMas.addEventListener("click", ()=>{window.open("productos.html","_self")})
+    verMas.addEventListener("click", ()=>{window.open("productos#galletas.html","_self")})
     secPostres.appendChild(verMas);
 }
 window.addEventListener("scroll", () => {
@@ -90,3 +103,4 @@ window.addEventListener("scroll", () => {
     header.classList.add("transparent");
   }
 });
+
